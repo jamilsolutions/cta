@@ -1,0 +1,65 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CTA",
+		"_postman_id": "0d7a9510-c2a1-902a-584e-0a9bafa045e7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Marketing",
+			"description": "",
+			"item": [
+				{
+					"name": "Start - http://localhost:8081/marketing/save",
+					"request": {
+						"url": "http://localhost:8081/marketing/save",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 87486253998,\r\n    \"name\": \"Sergio Moro Presidente\",\r\n    \"template\": \"<html><body>Welcom to the Financial Dervice</body></html>\",\r\n    \"dateOfBirth\": \"1971-03-02\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/marketing/read",
+					"request": {
+						"url": "http://localhost:8081/marketing/read/87486253998",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"87486253887\",\r\n    \"name\": \"Sergio Moro Presidente\",\r\n    \"template\": \"<html><body>Welcom to the Financial Dervice</body></html>\" ,\r\n    }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/marketing/list",
+					"request": {
+						"url": "http://localhost:8081/marketing/list",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\": \"80982409915\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
