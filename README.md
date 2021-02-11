@@ -21,7 +21,7 @@ Marketing Relationship Management microservices is the Service & API Design Mode
    ./gradlew bootJar  
    
 4. Run the project with the command:
-   cd /build/libs/
+   cd build/libs/
    java -jar cta-0.0.1-SNAPSHOT.jar
    
 5. Open Postman and import the cta.postman_collection.json collection file:

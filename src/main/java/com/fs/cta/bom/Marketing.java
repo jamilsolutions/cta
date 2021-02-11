@@ -23,7 +23,7 @@ public class Marketing implements Serializable {
 	@NotBlank(message = "Name is a required field")
 	private String name;
 	
-	@Column 
+	@Column(length = 4000) 
 	@NotBlank(message = "Template is a required field")
 	private String template;
 	

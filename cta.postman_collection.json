@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "CTA",
-		"_postman_id": "0d7a9510-c2a1-902a-584e-0a9bafa045e7",
+		"_postman_id": "85a2966d-9be0-d506-97d7-29418414ed5b",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -25,7 +25,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 87486253998,\r\n    \"name\": \"Sergio Moro Presidente\",\r\n    \"template\": \"<html><body>Welcom to the Financial Dervice</body></html>\",\r\n    \"dateOfBirth\": \"1971-03-02\"\r\n}"
+							"raw": "{\r\n    \"id\": 1001,\r\n    \"name\": \"Welcome\",\r\n    \"template\": \"<html><title>Welcome Financial Service</title><body><h2>Welcome!</h2><p>Hi <customer>, we’re glad you’re here! </p><p>You can enjoy deposit and invest in great portfolio we have to ofer to you to improve your benefits.</p><br><p align='center'>Your Information:</p><table align='center'><tr><th>Identification:</th><td><identification></td></tr><tr><th>Email: </th><td><email></td></tr></table><br> <p> Best Regards</p><br><p> Financial Service Team</p></body></html>\"\r\n}"
 						},
 						"description": ""
 					},
@@ -34,7 +34,7 @@
 				{
 					"name": "http://localhost:8081/marketing/read",
 					"request": {
-						"url": "http://localhost:8081/marketing/read/87486253998",
+						"url": "http://localhost:8081/marketing/read/1001",
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -54,6 +54,20 @@
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"cpf\": \"80982409915\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/marketing/delete",
+					"request": {
+						"url": "http://localhost:8081/marketing/delete/1001",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"87486253887\",\r\n    \"name\": \"Sergio Moro Presidente\",\r\n    \"address\": \"Rua Brasilia, 100 - Curitiba\" ,\r\n    \"dateOfBirth\": \"07-02-1971\"\r\n}"
 						},
 						"description": ""
 					},
